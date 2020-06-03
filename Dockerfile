@@ -1,9 +1,9 @@
 FROM golang:latest
 
-# Expect a 'port' argument specifying the service to build
+# Expect a 'port' argument
 ARG port
 
-# Set the environment variables needed for our container
+# Set the environment variables within the container
 ENV PORT=$port
 
 # Scaffold container directories
