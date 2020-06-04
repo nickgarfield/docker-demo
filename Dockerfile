@@ -8,10 +8,12 @@ ENV PORT=$port
 
 # Scaffold container directories
 RUN mkdir -p /demo
-WORKDIR /demo
 
 # Copy application code into the the container
 ADD . /demo
+
+# Change working directory
+WORKDIR /demo
 
 # Build the application
 RUN go build -o demo .
