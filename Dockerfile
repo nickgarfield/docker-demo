@@ -7,7 +7,7 @@ ARG port
 ENV PORT=$port
 
 # Scaffold container directories
-RUN mkdir -p /demo
+RUN mkdir /demo
 
 # Copy application code into the the container
 ADD . /demo
